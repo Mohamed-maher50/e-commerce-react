@@ -2,21 +2,22 @@
 import StarRatings from "react-star-ratings";
 import { CiHeart } from "react-icons/ci";
 import { SiSimpleanalytics } from "react-icons/si";
+import { useState } from "react";
 const ProductCart = ({ horizontal }) => {
   return (
     <div
-      className={`group/item text-sm duration-300 grid gap-y-2 overflow-hidden ${
+      className={`group/item text-sm duration-300 grid gap-y-2   ${
         horizontal ? " col-span-full grid-cols-4 gap-3" : ""
       }`}
     >
       <img
         src="/products/apple_iphone_11-_white_3_1.jpg"
-        className={`group-hover/item:shadow-lg  ${
+        className={`group-hover/item:shadow-2xl  ${
           horizontal ? "col-span-1" : "col-span-full"
         } duration-500 `}
       />
       <div className={`${horizontal ? "col-span-3 text-start gap-2" : ""}`}>
-        <p className=" rounded-lg  p-2 text-xs bg-gray-300">
+        <p className=" rounded-lg  p-2 text-xs ">
           982.18 EGP / 36 Months Bank Installment 0 Interest 0 Down Payment
         </p>
         <p>Apple iPhone 11 - 128GB - Facetime - White</p>
